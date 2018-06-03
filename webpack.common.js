@@ -39,9 +39,15 @@ module.exports = {
 		}),
 		new cleanWebpackPlugin(['dist'])
 	],
-	devServer: {
-		host: 'localhost',
-		port: 3000,
-		open: true
-	}
+	optimization: {
+        splitChunks: {
+            cacheGroups: {
+                commons: {
+                    test: /[\\/]node_modules[\\/]/,
+                    name: "vendors",
+                    chunks: "all"
+                }
+            }
+        }
+    }
 }

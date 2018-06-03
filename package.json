@@ -28,13 +28,15 @@
     "style-loader": "^0.21.0",
     "webpack": "^4.10.2",
     "webpack-cli": "^3.0.1",
-    "webpack-dev-server": "^3.1.4"
+    "webpack-dev-server": "^3.1.4",
+    "webpack-merge": "^4.1.2"
   },
   "jest": {
     "setupTestFrameworkScriptFile": "./test/enzyme.setup.js"
   },
   "scripts": {
-    "start": "webpack-dev-server",
+    "build": "webpack --config webpack.prod.js",
+    "start": "webpack-dev-server --config webpack.dev.js",
     "test": "jest ./test"
   }
 }
