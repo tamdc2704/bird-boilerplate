@@ -1,0 +1,29 @@
+{
+  "name": "bird",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/tamdc2704/bird-boilerplate.git",
+  "author": "tamdc2704 <tamdc2704@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "react": "^16.4.0",
+    "react-dom": "^16.4.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.3",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-2": "^6.24.1",
+    "enzyme": "^3.3.0",
+    "enzyme-adapter-react-16": "^1.1.1",
+    "jest": "^23.1.0",
+    "react-test-renderer": "^16.4.0"
+  },
+  "jest": {
+    "setupTestFrameworkScriptFile": "./test/enzyme.setup.js"
+  },
+  "scripts": {
+    "test": "jest ./test"
+  }
+}
