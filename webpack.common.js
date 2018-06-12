@@ -40,14 +40,14 @@ module.exports = {
 		new cleanWebpackPlugin(['dist'])
 	],
 	optimization: {
-        splitChunks: {
-            cacheGroups: {
-                commons: {
-                    test: /[\\/]node_modules[\\/]/,
-                    name: "vendors",
-                    chunks: "all"
-                }
-            }
-        }
-    }
+		splitChunks: {
+			cacheGroups: {
+				commons: {
+					test: /[\\/]node_modules[\\/]/,
+					name: 'vendors',
+					chunks: 'all'
+				}
+			}
+		}
+	}
 }
